@@ -202,6 +202,9 @@ fi
 if [[ "$TERM_PROGRAM" == "vscode" ]]; then
    export VISUAL="code --wait"
    export EDITOR="$VISUAL"
+elif [[ "$TERM_PROGRAM" == "zed" ]]; then
+   export VISUAL="zed"
+   export EDITOR="$VISUAL"
 elif (( $+commands[nvim] )); then
    export VISUAL="nvim"
    export EDITOR="$VISUAL"
@@ -282,6 +285,7 @@ fi
    (( $+DISABLE_AUTO_TMUX_ATTACH )) && return 0
    (( $+VSCODE_RESOLVING_ENVIRONMENT )) && return 0
    [[ "$TERM_PROGRAM" == "vscode" ]] && return 0
+   [[ "$TERM_PROGRAM" == "zed" ]] && return 0
    [[ "$TERM_PROGRAM" == "WarpTerminal" ]] && return 0
 
    # Build session lists
