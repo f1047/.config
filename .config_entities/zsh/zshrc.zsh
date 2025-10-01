@@ -83,7 +83,7 @@ if (( $+functions[zinit] )); then
    zinit ice wait"0" blockf; zinit light zsh-users/zsh-completions
    zinit ice wait"0" atload"_zsh_autosuggest_start"; zinit light zsh-users/zsh-autosuggestions
 
-   zinit ice wait"0" atinit"zpcompinit; zpcdreplay"; zinit light zdharma/fast-syntax-highlighting
+   zinit ice wait"0" atinit"zpcompinit; zpcdreplay"; zinit light zsh-users/zsh-syntax-highlighting
    zinit ice wait"0" atload"zpcompinit; zpcdreplay"; zinit light ascii-soup/zsh-url-highlighter
    zinit ice wait"0" blockf; zinit snippet OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh
 
