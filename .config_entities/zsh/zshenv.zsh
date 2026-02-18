@@ -12,11 +12,9 @@ autoload -U add-to-env
 add-to-env path /sbin
 add-to-env path $HOME/bin
 add-to-env path $HOME/.local/bin
-if [ $(uname -m) = "x86_64" ]; then
-   add-to-env path /usr/local/bin
-   add-to-env path /usr/local/sbin
-   add-to-env ld_library_path /usr/local/lib
-fi
+add-to-env path /usr/local/bin
+add-to-env path /usr/local/sbin
+add-to-env ld_library_path /usr/local/lib
 
 
 # rbenv
