@@ -1,0 +1,10 @@
+# [Behavior]
+keybind = shift+enter=text:\x1b\r
+
+# [Appearance]
+font-family = "HackGen Console NF"
+font-size = 14
+theme = 0x96f
+window-width = 160
+window-height = 48
+
