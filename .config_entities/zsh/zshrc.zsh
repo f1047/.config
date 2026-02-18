@@ -259,6 +259,9 @@ if (( $+commands[git] && $+commands[fzf] )); then
    autoload -Uz git-show-fzf
 fi
 
+alias xbrew='arch -x86 /usr/local/bin/brew'
+alias abrew='arch -arm64 /opt/Homebrew/bin/brew'
+
 compdef zsource='source'
 
 # Clipboard compatibility
