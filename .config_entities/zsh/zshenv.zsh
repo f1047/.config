@@ -91,6 +91,7 @@ fi
 if [[ -d $BREW_ROOT ]]; then
    export BREW_ROOT
    add-to-env path $BREW_ROOT/bin
+   add-to-env path $BREW_ROOT/sbin
 else
    unset BREW_ROOT
 fi
