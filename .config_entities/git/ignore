@@ -8,6 +8,10 @@ compile_commands.json
 .*.vimrc
 .vscode
 
+# Claude (local)
+.claude/**/*.local.md
+.claude/settings.local.json
+
 # Created by https://www.gitignore.io/api/linux,macos,windows
 
 ### Linux ###
